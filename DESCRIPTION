@@ -1,0 +1,17 @@
+Package: TimeSeriesSSM
+Type: Package
+Title: Implementation of State-Space Models
+Version: 0.1.0
+Author: 
+    person(given = "Riku",
+           family = "Masuda",
+           email = "rikumasuda520@gmail.com")
+Description:This package supports the implementation of state-space models. The state-space models in this package are limited to models with linear Gaussian state equations, and Gaussian observation distributions.
+    Among the linear Gaussian state equations, the package supports sinusoidal-based "weekly" and "yearly" seasonal components, and allows users to specify the number of periodicity components. For trend components, it supports both a simple random walk and a linear trend model. The linear trend also follows a random walk. Thus, there are two supported types of trend components. Random walk intercept only, and random walk linear trend with random walk intercept.
+    This package also accommodates explanatory variables in the state-space model. By inputting time-series data in matrix form as explanatory variables, users can run dynamic regression models that include these variables. For example, explanatory variables like dummy variables for calendar effects can be utilized. The coefficients of explanatory variables can be set as time varying parameters following random walk.
+    The package provides functionality for filtering, forecasting, and smoothing using state-space models. For smoothing, it uses an efficient MCMC method based on the standard FFBS algorithm, allowing for more efficient MCMC execution compared to using tools like Stan.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    MASS
