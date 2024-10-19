@@ -1,4 +1,8 @@
 \name{FFBS}
+\alias{FF_Gaussian}
+\alias{BS_Gaussian}
+\alias{extract_BS}
+\alias{plot_BS_mean}
 \title{
 FFBS Algorithm
 }
